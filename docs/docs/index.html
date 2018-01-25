@@ -91,6 +91,9 @@
                 <a class="nav-group-task-link" href="Classes/STPCardValidator.html">STPCardValidator</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/STPConnectAccountParams.html">STPConnectAccountParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes.html#/c:objc(cs)STPCoreScrollViewController">STPCoreScrollViewController</a>
               </li>
               <li class="nav-group-task">
@@ -115,6 +118,9 @@
                 <a class="nav-group-task-link" href="Classes/STPImageLibrary.html">STPImageLibrary</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/STPLegalEntityParams.html">STPLegalEntityParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/STPPaymentActivityIndicatorView.html">STPPaymentActivityIndicatorView</a>
               </li>
               <li class="nav-group-task">
@@ -131,6 +137,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/STPPaymentResult.html">STPPaymentResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/STPPersonParams.html">STPPersonParams</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/STPRedirectContext.html">STPRedirectContext</a>
@@ -172,6 +181,9 @@
                 <a class="nav-group-task-link" href="Classes/STPUserInformation.html">STPUserInformation</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/STPVerificationParams.html">STPVerificationParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Stripe.html">Stripe</a>
               </li>
             </ul>
@@ -184,6 +196,18 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Constants.html#/c:@STPCardErrorCodeKey">STPCardErrorCodeKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@STPContactFieldEmailAddress">STPContactFieldEmailAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@STPContactFieldName">STPContactFieldName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@STPContactFieldPhoneNumber">STPContactFieldPhoneNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@STPContactFieldPostalAddress">STPContactFieldPostalAddress</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Constants.html#/c:@STPErrorMessageKey">STPErrorMessageKey</a>
@@ -230,7 +254,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Enums.html">Enums</a>
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/STPBankAccountHolderType.html">STPBankAccountHolderType</a>
@@ -339,6 +363,9 @@
                 <a class="nav-group-task-link" href="Type Definitions.html#/c:StripeError.h@T@STPCardErrorCode">STPCardErrorCode</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Type Definitions.html#/c:STPAddress.h@T@STPContactField">STPContactField</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Type Definitions.html#/c:STPBlocks.h@T@STPCustomerCompletionBlock">STPCustomerCompletionBlock</a>
               </li>
               <li class="nav-group-task">
@@ -402,7 +429,7 @@
 <p>The Stripe iOS SDK makes it quick and easy to build an excellent payment experience in your iOS app. We provide powerful and customizable UI screens and elements that can be used out-of-the-box to collect your users&rsquo; payment details. We also expose the low-level APIs that power those UIs so that you can build fully custom experiences. See our <a href="https://stripe.com/docs/mobile/ios">iOS Integration Guide</a> to get started!</p>
 
 <blockquote>
-<p>Note: We&rsquo;ve greatly simplified the integration for <code>STPPaymentContext</code> in <a href="https://github.com/stripe/stripe-ios/releases/v11.0.0">v11.0.0</a>. If you integrated <code>STPPaymentContext</code> prior to this and you&rsquo;re interested in migrating, please see our <a href="https://github.com/stripe/stripe-ios/blob/master/MIGRATING.md#migration-from-versions--1100">migration guide</a>.</p>
+<p>Note: We&rsquo;ve greatly simplified the integration for <code><a href="Classes/STPPaymentContext.html">STPPaymentContext</a></code> in <a href="https://github.com/stripe/stripe-ios/releases/v11.0.0">v11.0.0</a>. If you integrated <code><a href="Classes/STPPaymentContext.html">STPPaymentContext</a></code> prior to this and you&rsquo;re interested in migrating, please see our <a href="https://github.com/stripe/stripe-ios/blob/master/MIGRATING.md#migration-from-versions--1100">migration guide</a>.</p>
 </blockquote>
 <h3 id='features' class='heading'>Features</h3>
 
@@ -417,10 +444,11 @@
 
 <p>We recommend that you install the Stripe iOS SDK using a package manager such as <a href="https://stripe.com/docs/mobile/ios#getting-started">Cocoapods or Carthage</a>. If you prefer to link the library manually, please use a version from our <a href="https://github.com/stripe/stripe-ios/releases">releases</a> page because we consider the master branch to be unstable.</p>
 
-<p>If you&rsquo;re reading this on GitHub.com, please make sure you are looking at the <a href="https://github.com/stripe/stripe-ios/tags">tagged version</a> that corresponds to the release you have installed. Otherwise, the instructions and example code may be mismatched with your copy. You can read the latest tagged version of this README and browse the associated code on GitHub using <a href="https://github.com/stripe/stripe-ios/tree/v11.3.0">this link</a>.</p>
+<p>If you&rsquo;re reading this on GitHub.com, please make sure you are looking at the <a href="https://github.com/stripe/stripe-ios/tags">tagged version</a> that corresponds to the release you have installed. Otherwise, the instructions and example code may be mismatched with your copy. You can read the latest tagged version of this README and browse the associated code on GitHub using
+<a href="https://github.com/stripe/stripe-ios/tree/v12.0.0">this link</a>.</p>
 <h2 id='requirements' class='heading'>Requirements</h2>
 
-<p>The Stripe iOS SDK is compatible with apps supporting iOS 8 and above and requires Xcode 8 to build from source.</p>
+<p>The Stripe iOS SDK is compatible with apps supporting iOS 9 and above and requires Xcode 9 to build from source.</p>
 <h2 id='getting-started' class='heading'>Getting Started</h2>
 <h3 id='integration' class='heading'>Integration</h3>
 
@@ -460,7 +488,7 @@
 <li>Install Carthage (if you have homebrew installed, <code>brew install carthage</code>)</li>
 <li>From the root of the repo, install test dependencies by running <code>carthage bootstrap --platform ios --configuration Release --no-use-binaries</code></li>
 <li>Open Stripe.xcworkspace</li>
-<li>Choose the <q>StripeiOS</q> scheme with the iPhone 6, iOS 10.3 simulator (required for snapshot tests to pass)</li>
+<li>Choose the <q>StripeiOS</q> scheme with the iPhone 6, iOS 11.2 simulator (required for snapshot tests to pass)</li>
 <li>Run Product -&gt; Test</li>
 </ol>
 <h2 id='migrating-from-older-versions' class='heading'>Migrating from Older Versions</h2>
@@ -474,8 +502,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="https://stripe.com" target="_blank" rel="external">Stripe</a>. All rights reserved. (Last updated: 2017-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://stripe.com" target="_blank" rel="external">Stripe</a>. All rights reserved. (Last updated: 2018-01-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
