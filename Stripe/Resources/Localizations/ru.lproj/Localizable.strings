@@ -122,10 +122,10 @@
 "Your card was declined" = "Карта отклонена. Используйте другую карту.";
 
 /* Error when the card's expiration month is not valid */
-"Your card's expiration month is invalid" = "Неправильный срок дейстивя карты. Введите год и месяц, указанные на лицевой стороне карты.";
+"Your card's expiration month is invalid" = "Неправильный срок действия карты. Введите год и месяц, указанные на лицевой стороне карты.";
 
 /* Error when the card's expiration year is not valid */
-"Your card's expiration year is invalid" = "Неправильный срок дейстивя карты. Введите год и месяц, указанные на лицевой стороне карты.";
+"Your card's expiration year is invalid" = "Неправильный срок действия карты. Введите год и месяц, указанные на лицевой стороне карты.";
 
 /* Error when the card number is not valid */
 "Your card's number is invalid" = "Неправильный номер карты. Попробуйте ещё раз, у вас всё получится!";
